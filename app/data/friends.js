@@ -23,6 +23,18 @@ var friends = {
       photo:
         "https://drive.google.com/file/d/1PA096dLE3HPvEN3PlTv0crTndFbbjd8y/view",
       scores: [5, 3, 4, 4, 5, 1, 3, 5, 4, 5]
+    },
+    {
+      name: "Adam",
+      photo:
+        "https://drive.google.com/file/d/1PA096dLE3HPvEN3PlTv0crTndFbbjd8y/view",
+      scores: [5, 5, 4, 4, 4, 4, 4, 3, 2, 1]
+    },
+    {
+      name: "Zach",
+      photo:
+        "https://drive.google.com/file/d/1PA096dLE3HPvEN3PlTv0crTndFbbjd8y/view",
+      scores: [4, 3, 2, 3, 5, 2, 3, 5, 4, 1]
     }
   ],
   match: function(newFriend) {
