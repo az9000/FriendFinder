@@ -6,9 +6,17 @@ const getFriends = function(req, res) {
 
 const addFriend = function(req, res) {
   var body = req.body;
-
+  
+  var myFriend;
+  if (friends.exists(body)) {
+    myFriend = {
+      name: "Oops! " + body.name + " already exists!",
+      photo: body.photo
+    }
+    return res.json(myFriend);
+  }
   // find closest match
-  var myFriend = friends.match(body);
+  myFriend = friends.match(body);
 
   return res.json(myFriend);
 };

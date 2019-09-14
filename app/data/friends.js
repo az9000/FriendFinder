@@ -37,7 +37,18 @@ var friends = {
       scores: [4, 3, 2, 3, 5, 2, 3, 5, 4, 1]
     }
   ],
-  match: function(newFriend) {
+  exists: function(me) {
+    
+    for (var index in this.list) {
+        var friend = this.list[index];
+        if (friend.name.toLowerCase() === me.name.toLowerCase()) {
+            return true;
+        }
+    }
+    
+    return false;
+  },
+  match: function(me) {
     var sum = 0;
     var smallest = 50;
     var myFriend = {};
@@ -45,7 +56,7 @@ var friends = {
       var friend = this.list[index];
       sum = 0;
       for (var i = 0; i < friend.scores.length; i++) {
-        sum += Math.abs(newFriend.scores[i] - friend.scores[i]);
+        sum += Math.abs(me.scores[i] - friend.scores[i]);
       }
       if (sum <= smallest) {
         smallest = sum;
