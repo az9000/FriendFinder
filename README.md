@@ -27,10 +27,17 @@ This App utilizes the [npm](https://www.npmjs.com/) packages [express](https://w
 
 ## Demo
 [Heroku](https://www.heroku.com/) was used for hosting this app. <br>
-To see this App in action, please visit ``
+Demo: [FriendFinder](https://damp-meadow-16793.herokuapp.com/)
 
 ## Repository
+[FriendFinder](https://github.com/az9000/FriendFinder)
 
 ## Technologies used
+1. node JS
+1. HTML
+1. CSS
+1. JavaScript
+1. Heroku
 
 ## Author
+Fawzi Alami
