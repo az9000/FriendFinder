@@ -10,11 +10,24 @@ This App utilizes the [npm](https://www.npmjs.com/) packages [express](https://w
 1. **server.js** - entry point file. This program imports [express](https://www.npmjs.com/package/express), [path](https://www.npmjs.com/package/path), and well as the other routing files.
 1. **htmlRoutes.js** - used to do a default route to **home.html** page, as well as a `GET` route to display the Survey (**surevy.html**) page.
 1. **apiRoutes** - the api route file that has the `GET` route `/api/friends` that will display a `JSON` representation of all possible friends, and the `POST` rout `/api/friends` that will submit survey results back to the server, and retrieve the closest friend match.
-1. 
+1. **friends.js** - a file that contains an object that has an array of possible friends, as well as a method to return closest match
+1. **home.html** - FriendFinder home page
+1. **survey.html** - survey page
 
 ## How to use
+1. Clone, or download this repository
+1. Navigate to where the `\FriendFinder` folder is
+1. Install dependencies <br>
+`$ npm install`
+1. In Terminal, use node to start the server <br>
+`$ node server.js`
+1. You should see the following, indicating a successful server launch:
+`App listening on PORT 3000`
+1. In your favorite browser, navigate to `http://localhost:3000`
 
 ## Demo
+[Heroku](https://www.heroku.com/) was used for hosting this app. <br>
+To see this App in action, please visit ``
 
 ## Repository
 
